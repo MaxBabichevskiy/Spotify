@@ -1,0 +1,314 @@
+﻿namespace Spotify
+{
+    partial class F_Favorite
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Favorite));
+            panel1 = new Panel();
+            panel4 = new Panel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            button1 = new Button();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel5 = new Panel();
+            label14 = new Label();
+            label13 = new Label();
+            progressBar1 = new ProgressBar();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            panel1.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            panel3.SuspendLayout();
+            panel5.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.AutoSize = true;
+            panel1.BackColor = Color.Black;
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(tableLayoutPanel1);
+            panel1.Location = new Point(-4, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(222, 558);
+            panel1.TabIndex = 5;
+            // 
+            // panel4
+            // 
+            panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
+            panel4.BackgroundImageLayout = ImageLayout.Center;
+            panel4.Location = new Point(0, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(214, 92);
+            panel4.TabIndex = 1;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(button2, 0, 1);
+            tableLayoutPanel1.Controls.Add(button3, 0, 2);
+            tableLayoutPanel1.Controls.Add(button4, 0, 3);
+            tableLayoutPanel1.Controls.Add(button5, 0, 4);
+            tableLayoutPanel1.Controls.Add(button1, 0, 0);
+            tableLayoutPanel1.Location = new Point(16, 123);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 5;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
+            tableLayoutPanel1.Size = new Size(172, 258);
+            tableLayoutPanel1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Black;
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(3, 54);
+            button2.Name = "button2";
+            button2.Size = new Size(166, 45);
+            button2.TabIndex = 1;
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Location = new Point(3, 105);
+            button3.Name = "button3";
+            button3.Size = new Size(166, 45);
+            button3.TabIndex = 2;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
+            button4.BackgroundImageLayout = ImageLayout.Stretch;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Location = new Point(3, 156);
+            button4.Name = "button4";
+            button4.Size = new Size(166, 45);
+            button4.TabIndex = 3;
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
+            button5.BackgroundImageLayout = ImageLayout.Stretch;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Location = new Point(3, 207);
+            button5.Name = "button5";
+            button5.Size = new Size(166, 48);
+            button5.TabIndex = 4;
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(3, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(166, 45);
+            button1.TabIndex = 0;
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.AutoSize = true;
+            panel2.BackColor = Color.FromArgb(16, 16, 16);
+            panel2.Location = new Point(216, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(726, 66);
+            panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(29, 29, 29);
+            panel3.Controls.Add(panel5);
+            panel3.Location = new Point(216, 65);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(726, 493);
+            panel3.TabIndex = 7;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(24, 24, 24);
+            panel5.Controls.Add(label14);
+            panel5.Controls.Add(label13);
+            panel5.Controls.Add(progressBar1);
+            panel5.Controls.Add(tableLayoutPanel4);
+            panel5.Location = new Point(0, 417);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(726, 73);
+            panel5.TabIndex = 4;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(497, 41);
+            label14.Name = "label14";
+            label14.Size = new Size(34, 15);
+            label14.TabIndex = 3;
+            label14.Text = "00:00";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.ForeColor = Color.White;
+            label13.Location = new Point(197, 41);
+            label13.Name = "label13";
+            label13.Size = new Size(34, 15);
+            label13.TabIndex = 2;
+            label13.Text = "00:00";
+            // 
+            // progressBar1
+            // 
+            progressBar1.ForeColor = Color.FromArgb(0, 64, 0);
+            progressBar1.Location = new Point(237, 48);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(254, 3);
+            progressBar1.TabIndex = 1;
+            // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tableLayoutPanel4.ColumnCount = 3;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel4.Controls.Add(button6, 0, 0);
+            tableLayoutPanel4.Controls.Add(button7, 1, 0);
+            tableLayoutPanel4.Controls.Add(button8, 2, 0);
+            tableLayoutPanel4.Location = new Point(298, 3);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 1;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.Size = new Size(133, 28);
+            tableLayoutPanel4.TabIndex = 0;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(22, 22, 22);
+            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
+            button6.BackgroundImageLayout = ImageLayout.Stretch;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Location = new Point(4, 4);
+            button6.Name = "button6";
+            button6.Size = new Size(37, 20);
+            button6.TabIndex = 0;
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
+            button7.BackgroundImageLayout = ImageLayout.Stretch;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Location = new Point(48, 4);
+            button7.Name = "button7";
+            button7.Size = new Size(37, 20);
+            button7.TabIndex = 1;
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
+            button8.BackgroundImageLayout = ImageLayout.Stretch;
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Location = new Point(92, 4);
+            button8.Name = "button8";
+            button8.Size = new Size(37, 20);
+            button8.TabIndex = 2;
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // F_Favorite
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(939, 552);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Name = "F_Favorite";
+            Text = "F_Favorite";
+            panel1.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            tableLayoutPanel4.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Panel panel1;
+        private Panel panel4;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Button button1;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel5;
+        private Label label14;
+        private Label label13;
+        private ProgressBar progressBar1;
+        private TableLayoutPanel tableLayoutPanel4;
+        private Button button6;
+        private Button button7;
+        private Button button8;
+    }
+}
