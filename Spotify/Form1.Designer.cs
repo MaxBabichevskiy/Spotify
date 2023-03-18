@@ -11,14 +11,7 @@
         ///  Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+
 
         #region Windows Form Designer generated code
 
@@ -123,6 +116,7 @@
             button2.Size = new Size(166, 45);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             button2.MouseEnter += button2_MouseEnter;
             // 
             // button3
@@ -136,6 +130,7 @@
             button3.Size = new Size(166, 45);
             button3.TabIndex = 2;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -148,6 +143,7 @@
             button4.Size = new Size(166, 45);
             button4.TabIndex = 3;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -610,6 +606,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             tableLayoutPanel1.ResumeLayout(false);

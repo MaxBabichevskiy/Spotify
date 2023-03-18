@@ -66,5 +66,22 @@ namespace Spotify
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            F_Search f_Search = new F_Search();
+            f_Search.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            F_Create_Playlist f_Create_Playlist = new F_Create_Playlist();
+            f_Create_Playlist.Show();
+        }
     }
 }
