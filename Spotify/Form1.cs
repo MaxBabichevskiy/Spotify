@@ -75,13 +75,20 @@ namespace Spotify
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            F_Media f_Media = new F_Media();
+            f_Media.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             F_Create_Playlist f_Create_Playlist = new F_Create_Playlist();
             f_Create_Playlist.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            F_Favorite f_Favorite = new F_Favorite();
+            f_Favorite.Show();
         }
     }
 }

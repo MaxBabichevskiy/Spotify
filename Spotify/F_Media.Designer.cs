@@ -47,11 +47,16 @@
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
+            panel6 = new Panel();
+            label11 = new Label();
+            label1 = new Label();
+            label2 = new Label();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
             panel5.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
+            panel6.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -170,6 +175,8 @@
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(29, 29, 29);
+            panel3.Controls.Add(label11);
+            panel3.Controls.Add(panel6);
             panel3.Controls.Add(panel5);
             panel3.Location = new Point(216, 65);
             panel3.Name = "panel3";
@@ -270,6 +277,50 @@
             button8.TabIndex = 2;
             button8.UseVisualStyleBackColor = true;
             // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(94, 55, 240);
+            panel6.Controls.Add(label2);
+            panel6.Controls.Add(label1);
+            panel6.Location = new Point(37, 96);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(278, 163);
+            panel6.TabIndex = 5;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(37, 58);
+            label11.Name = "label11";
+            label11.Size = new Size(90, 20);
+            label11.TabIndex = 6;
+            label11.Text = "Плейлисты";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(18, 86);
+            label1.Name = "label1";
+            label1.Size = new Size(162, 26);
+            label1.TabIndex = 7;
+            label1.Text = "Любимые треки";
+            label1.Click += label1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(20, 131);
+            label2.Name = "label2";
+            label2.Size = new Size(110, 17);
+            label2.TabIndex = 8;
+            label2.Text = "0 любимые треки";
+            // 
             // F_Media
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -283,9 +334,12 @@
             panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             tableLayoutPanel4.ResumeLayout(false);
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -310,5 +364,9 @@
         private Button button6;
         private Button button7;
         private Button button8;
+        private Panel panel6;
+        private Label label11;
+        private Label label2;
+        private Label label1;
     }
 }

@@ -524,6 +524,7 @@
             label2.Size = new Size(323, 60);
             label2.TabIndex = 2;
             label2.Text = "Мой плейлист";
+            label2.Click += label2_Click;
             // 
             // label1
             // 

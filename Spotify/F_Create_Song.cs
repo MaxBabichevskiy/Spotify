@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Spotify
 {
-    public partial class F_Media : Form
+    public partial class F_Create_Song : Form
     {
-        public F_Media()
+        public F_Create_Song()
         {
             InitializeComponent();
-        }
-
-        private void плейлистыToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
