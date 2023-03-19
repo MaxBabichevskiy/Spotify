@@ -39,6 +39,10 @@
             button1 = new Button();
             panel2 = new Panel();
             panel3 = new Panel();
+            label11 = new Label();
+            panel6 = new Panel();
+            label2 = new Label();
+            label1 = new Label();
             panel5 = new Panel();
             label14 = new Label();
             label13 = new Label();
@@ -47,16 +51,12 @@
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
-            panel6 = new Panel();
-            label11 = new Label();
-            label1 = new Label();
-            label2 = new Label();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel3.SuspendLayout();
+            panel6.SuspendLayout();
             panel5.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
-            panel6.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -105,6 +105,7 @@
             button2.BackColor = Color.Black;
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Location = new Point(3, 54);
@@ -112,11 +113,13 @@
             button2.Size = new Size(166, 45);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
             button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.Cursor = Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Location = new Point(3, 105);
@@ -129,6 +132,7 @@
             // 
             button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
             button4.BackgroundImageLayout = ImageLayout.Stretch;
+            button4.Cursor = Cursors.Hand;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Location = new Point(3, 156);
@@ -136,11 +140,13 @@
             button4.Size = new Size(166, 45);
             button4.TabIndex = 3;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
             button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
             button5.BackgroundImageLayout = ImageLayout.Stretch;
+            button5.Cursor = Cursors.Hand;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Location = new Point(3, 207);
@@ -148,12 +154,14 @@
             button5.Size = new Size(166, 48);
             button5.TabIndex = 4;
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(3, 3);
@@ -161,6 +169,7 @@
             button1.Size = new Size(166, 45);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // panel2
             // 
@@ -182,6 +191,51 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(726, 493);
             panel3.TabIndex = 5;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(37, 58);
+            label11.Name = "label11";
+            label11.Size = new Size(90, 20);
+            label11.TabIndex = 6;
+            label11.Text = "Плейлисты";
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(94, 55, 240);
+            panel6.Controls.Add(label2);
+            panel6.Controls.Add(label1);
+            panel6.Cursor = Cursors.Hand;
+            panel6.Location = new Point(37, 96);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(278, 163);
+            panel6.TabIndex = 5;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(20, 131);
+            label2.Name = "label2";
+            label2.Size = new Size(110, 17);
+            label2.TabIndex = 8;
+            label2.Text = "0 любимые треки";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(18, 86);
+            label1.Name = "label1";
+            label1.Size = new Size(162, 26);
+            label1.TabIndex = 7;
+            label1.Text = "Любимые треки";
+            label1.Click += label1_Click;
             // 
             // panel5
             // 
@@ -217,6 +271,7 @@
             // 
             // progressBar1
             // 
+            progressBar1.Cursor = Cursors.Hand;
             progressBar1.ForeColor = Color.FromArgb(0, 64, 0);
             progressBar1.Location = new Point(237, 48);
             progressBar1.Name = "progressBar1";
@@ -245,6 +300,7 @@
             button6.BackColor = Color.FromArgb(22, 22, 22);
             button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
             button6.BackgroundImageLayout = ImageLayout.Stretch;
+            button6.Cursor = Cursors.Hand;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Location = new Point(4, 4);
@@ -257,6 +313,7 @@
             // 
             button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
             button7.BackgroundImageLayout = ImageLayout.Stretch;
+            button7.Cursor = Cursors.Hand;
             button7.FlatAppearance.BorderSize = 0;
             button7.FlatStyle = FlatStyle.Flat;
             button7.Location = new Point(48, 4);
@@ -269,6 +326,7 @@
             // 
             button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
             button8.BackgroundImageLayout = ImageLayout.Stretch;
+            button8.Cursor = Cursors.Hand;
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Location = new Point(92, 4);
@@ -276,50 +334,6 @@
             button8.Size = new Size(37, 20);
             button8.TabIndex = 2;
             button8.UseVisualStyleBackColor = true;
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.FromArgb(94, 55, 240);
-            panel6.Controls.Add(label2);
-            panel6.Controls.Add(label1);
-            panel6.Location = new Point(37, 96);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(278, 163);
-            panel6.TabIndex = 5;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(37, 58);
-            label11.Name = "label11";
-            label11.Size = new Size(90, 20);
-            label11.TabIndex = 6;
-            label11.Text = "Плейлисты";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Impact", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(18, 86);
-            label1.Name = "label1";
-            label1.Size = new Size(162, 26);
-            label1.TabIndex = 7;
-            label1.Text = "Любимые треки";
-            label1.Click += label1_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Impact", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(20, 131);
-            label2.Name = "label2";
-            label2.Size = new Size(110, 17);
-            label2.TabIndex = 8;
-            label2.Text = "0 любимые треки";
             // 
             // F_Media
             // 
@@ -330,16 +344,17 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "F_Media";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "F_Media";
             panel1.ResumeLayout(false);
             tableLayoutPanel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             tableLayoutPanel4.ResumeLayout(false);
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }

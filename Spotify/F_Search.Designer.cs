@@ -161,6 +161,7 @@
             button2.BackColor = Color.Black;
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Location = new Point(3, 54);
@@ -173,6 +174,7 @@
             // 
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
             button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.Cursor = Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Location = new Point(3, 105);
@@ -180,11 +182,13 @@
             button3.Size = new Size(166, 45);
             button3.TabIndex = 2;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
             button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
             button4.BackgroundImageLayout = ImageLayout.Stretch;
+            button4.Cursor = Cursors.Hand;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Location = new Point(3, 156);
@@ -192,11 +196,13 @@
             button4.Size = new Size(166, 45);
             button4.TabIndex = 3;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
             button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
             button5.BackgroundImageLayout = ImageLayout.Stretch;
+            button5.Cursor = Cursors.Hand;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Location = new Point(3, 207);
@@ -204,12 +210,14 @@
             button5.Size = new Size(166, 48);
             button5.TabIndex = 4;
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(3, 3);
@@ -217,6 +225,7 @@
             button1.Size = new Size(166, 45);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // panel2
             // 
@@ -242,6 +251,7 @@
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Cursor = Cursors.IBeam;
             textBox1.ForeColor = Color.FromArgb(117, 124, 166);
             textBox1.Location = new Point(29, 5);
             textBox1.Name = "textBox1";
@@ -344,6 +354,7 @@
             // 
             pictureBox25.BackgroundImage = (Image)resources.GetObject("pictureBox25.BackgroundImage");
             pictureBox25.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox25.Cursor = Cursors.Hand;
             pictureBox25.Location = new Point(503, 503);
             pictureBox25.Name = "pictureBox25";
             pictureBox25.Size = new Size(119, 119);
@@ -354,6 +365,7 @@
             // 
             pictureBox24.BackgroundImage = (Image)resources.GetObject("pictureBox24.BackgroundImage");
             pictureBox24.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox24.Cursor = Cursors.Hand;
             pictureBox24.Location = new Point(378, 503);
             pictureBox24.Name = "pictureBox24";
             pictureBox24.Size = new Size(119, 119);
@@ -364,6 +376,7 @@
             // 
             pictureBox23.BackgroundImage = (Image)resources.GetObject("pictureBox23.BackgroundImage");
             pictureBox23.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox23.Cursor = Cursors.Hand;
             pictureBox23.Location = new Point(253, 503);
             pictureBox23.Name = "pictureBox23";
             pictureBox23.Size = new Size(119, 119);
@@ -374,6 +387,7 @@
             // 
             pictureBox22.BackgroundImage = (Image)resources.GetObject("pictureBox22.BackgroundImage");
             pictureBox22.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox22.Cursor = Cursors.Hand;
             pictureBox22.Location = new Point(128, 503);
             pictureBox22.Name = "pictureBox22";
             pictureBox22.Size = new Size(119, 119);
@@ -384,6 +398,7 @@
             // 
             pictureBox21.BackgroundImage = (Image)resources.GetObject("pictureBox21.BackgroundImage");
             pictureBox21.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox21.Cursor = Cursors.Hand;
             pictureBox21.Location = new Point(3, 503);
             pictureBox21.Name = "pictureBox21";
             pictureBox21.Size = new Size(119, 119);
@@ -394,6 +409,7 @@
             // 
             pictureBox20.BackgroundImage = (Image)resources.GetObject("pictureBox20.BackgroundImage");
             pictureBox20.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox20.Cursor = Cursors.Hand;
             pictureBox20.Location = new Point(503, 378);
             pictureBox20.Name = "pictureBox20";
             pictureBox20.Size = new Size(119, 119);
@@ -404,6 +420,7 @@
             // 
             pictureBox19.BackgroundImage = (Image)resources.GetObject("pictureBox19.BackgroundImage");
             pictureBox19.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox19.Cursor = Cursors.Hand;
             pictureBox19.Location = new Point(378, 378);
             pictureBox19.Name = "pictureBox19";
             pictureBox19.Size = new Size(119, 119);
@@ -414,6 +431,7 @@
             // 
             pictureBox18.BackgroundImage = (Image)resources.GetObject("pictureBox18.BackgroundImage");
             pictureBox18.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox18.Cursor = Cursors.Hand;
             pictureBox18.Location = new Point(253, 378);
             pictureBox18.Name = "pictureBox18";
             pictureBox18.Size = new Size(119, 119);
@@ -424,6 +442,7 @@
             // 
             pictureBox17.BackgroundImage = (Image)resources.GetObject("pictureBox17.BackgroundImage");
             pictureBox17.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox17.Cursor = Cursors.Hand;
             pictureBox17.Location = new Point(128, 378);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(119, 119);
@@ -434,6 +453,7 @@
             // 
             pictureBox16.BackgroundImage = (Image)resources.GetObject("pictureBox16.BackgroundImage");
             pictureBox16.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox16.Cursor = Cursors.Hand;
             pictureBox16.Location = new Point(3, 378);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(119, 119);
@@ -444,6 +464,7 @@
             // 
             pictureBox15.BackgroundImage = (Image)resources.GetObject("pictureBox15.BackgroundImage");
             pictureBox15.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox15.Cursor = Cursors.Hand;
             pictureBox15.Location = new Point(503, 253);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(119, 119);
@@ -454,6 +475,7 @@
             // 
             pictureBox14.BackgroundImage = (Image)resources.GetObject("pictureBox14.BackgroundImage");
             pictureBox14.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox14.Cursor = Cursors.Hand;
             pictureBox14.Location = new Point(378, 253);
             pictureBox14.Name = "pictureBox14";
             pictureBox14.Size = new Size(119, 119);
@@ -464,6 +486,7 @@
             // 
             pictureBox13.BackgroundImage = (Image)resources.GetObject("pictureBox13.BackgroundImage");
             pictureBox13.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox13.Cursor = Cursors.Hand;
             pictureBox13.Location = new Point(253, 253);
             pictureBox13.Name = "pictureBox13";
             pictureBox13.Size = new Size(119, 119);
@@ -474,6 +497,7 @@
             // 
             pictureBox12.BackgroundImage = (Image)resources.GetObject("pictureBox12.BackgroundImage");
             pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox12.Cursor = Cursors.Hand;
             pictureBox12.Location = new Point(128, 253);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(119, 119);
@@ -484,6 +508,7 @@
             // 
             pictureBox11.BackgroundImage = (Image)resources.GetObject("pictureBox11.BackgroundImage");
             pictureBox11.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox11.Cursor = Cursors.Hand;
             pictureBox11.Location = new Point(3, 253);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(119, 119);
@@ -494,6 +519,7 @@
             // 
             pictureBox10.BackgroundImage = (Image)resources.GetObject("pictureBox10.BackgroundImage");
             pictureBox10.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox10.Cursor = Cursors.Hand;
             pictureBox10.Location = new Point(503, 128);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(119, 119);
@@ -504,6 +530,7 @@
             // 
             pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
             pictureBox9.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox9.Cursor = Cursors.Hand;
             pictureBox9.Location = new Point(378, 128);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(119, 119);
@@ -514,6 +541,7 @@
             // 
             pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
             pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox8.Cursor = Cursors.Hand;
             pictureBox8.Location = new Point(253, 128);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(119, 119);
@@ -524,6 +552,7 @@
             // 
             pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
             pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox7.Cursor = Cursors.Hand;
             pictureBox7.Location = new Point(128, 128);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(119, 119);
@@ -534,6 +563,7 @@
             // 
             pictureBox6.BackgroundImage = (Image)resources.GetObject("pictureBox6.BackgroundImage");
             pictureBox6.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox6.Cursor = Cursors.Hand;
             pictureBox6.Location = new Point(3, 128);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(119, 119);
@@ -544,6 +574,7 @@
             // 
             pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox5.Cursor = Cursors.Hand;
             pictureBox5.Location = new Point(503, 3);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(119, 119);
@@ -554,6 +585,7 @@
             // 
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Cursor = Cursors.Hand;
             pictureBox4.Location = new Point(378, 3);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(119, 119);
@@ -564,6 +596,7 @@
             // 
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Location = new Point(253, 3);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(119, 119);
@@ -574,6 +607,7 @@
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Location = new Point(128, 3);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(119, 119);
@@ -584,6 +618,7 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Location = new Point(3, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(119, 119);
@@ -624,6 +659,7 @@
             // 
             // progressBar1
             // 
+            progressBar1.Cursor = Cursors.Hand;
             progressBar1.ForeColor = Color.FromArgb(0, 64, 0);
             progressBar1.Location = new Point(237, 48);
             progressBar1.Name = "progressBar1";
@@ -652,6 +688,7 @@
             button6.BackColor = Color.FromArgb(22, 22, 22);
             button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
             button6.BackgroundImageLayout = ImageLayout.Stretch;
+            button6.Cursor = Cursors.Hand;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Location = new Point(4, 4);
@@ -664,6 +701,7 @@
             // 
             button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
             button7.BackgroundImageLayout = ImageLayout.Stretch;
+            button7.Cursor = Cursors.Hand;
             button7.FlatAppearance.BorderSize = 0;
             button7.FlatStyle = FlatStyle.Flat;
             button7.Location = new Point(48, 4);
@@ -676,6 +714,7 @@
             // 
             button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
             button8.BackgroundImageLayout = ImageLayout.Stretch;
+            button8.Cursor = Cursors.Hand;
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Location = new Point(92, 4);

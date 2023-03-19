@@ -52,6 +52,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Cursor = Cursors.Hand;
             label1.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(148, 148, 148);
             label1.Location = new Point(371, 32);
@@ -59,32 +60,43 @@
             label1.Size = new Size(17, 18);
             label1.TabIndex = 6;
             label1.Text = "X";
+            label1.Click += label1_Click;
+            label1.MouseEnter += label1_MouseEnter;
+            label1.MouseLeave += label1_MouseLeave;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Location = new Point(23, 68);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(140, 140);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // textBox1
             // 
             textBox1.BackColor = Color.FromArgb(62, 62, 62);
             textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Cursor = Cursors.IBeam;
             textBox1.ForeColor = Color.FromArgb(148, 148, 148);
             textBox1.Location = new Point(182, 68);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(206, 16);
             textBox1.TabIndex = 8;
             textBox1.Text = "Добавить название";
+            textBox1.TextChanged += textBox1_TextChanged;
+            textBox1.Enter += textBox1_Enter;
+            textBox1.Leave += textBox1_Leave;
             // 
             // textBox2
             // 
             textBox2.BackColor = Color.FromArgb(62, 62, 62);
             textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Cursor = Cursors.IBeam;
             textBox2.ForeColor = Color.FromArgb(148, 148, 148);
             textBox2.Location = new Point(182, 107);
             textBox2.Multiline = true;
@@ -92,11 +104,14 @@
             textBox2.Size = new Size(206, 101);
             textBox2.TabIndex = 9;
             textBox2.Text = "Добавить описание(необязательно)";
+            textBox2.Enter += textBox2_Enter;
+            textBox2.Leave += textBox2_Leave;
             // 
             // button1
             // 
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(279, 225);
@@ -104,6 +119,7 @@
             button1.Size = new Size(109, 36);
             button1.TabIndex = 10;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // F_Create_Song
             // 
@@ -119,7 +135,11 @@
             Controls.Add(label4);
             FormBorderStyle = FormBorderStyle.None;
             Name = "F_Create_Song";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "F_Create_Song";
+            Load += F_Create_Song_Load;
+            MouseDown += F_Create_Song_MouseDown;
+            MouseMove += F_Create_Song_MouseMove;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

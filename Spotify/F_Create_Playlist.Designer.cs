@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Create_Playlist));
             panel1 = new Panel();
             panel3 = new Panel();
@@ -74,6 +75,7 @@
             button4 = new Button();
             button5 = new Button();
             button1 = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -340,6 +342,7 @@
             // 
             button9.BackgroundImage = (Image)resources.GetObject("button9.BackgroundImage");
             button9.BackgroundImageLayout = ImageLayout.Stretch;
+            button9.Cursor = Cursors.Hand;
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = FlatStyle.Flat;
             button9.Location = new Point(557, 3);
@@ -352,6 +355,7 @@
             // 
             button10.BackgroundImage = (Image)resources.GetObject("button10.BackgroundImage");
             button10.BackgroundImageLayout = ImageLayout.Stretch;
+            button10.Cursor = Cursors.Hand;
             button10.FlatAppearance.BorderSize = 0;
             button10.FlatStyle = FlatStyle.Flat;
             button10.Location = new Point(557, 40);
@@ -364,6 +368,7 @@
             // 
             button11.BackgroundImage = (Image)resources.GetObject("button11.BackgroundImage");
             button11.BackgroundImageLayout = ImageLayout.Stretch;
+            button11.Cursor = Cursors.Hand;
             button11.FlatAppearance.BorderSize = 0;
             button11.FlatStyle = FlatStyle.Flat;
             button11.Location = new Point(557, 77);
@@ -376,6 +381,7 @@
             // 
             button12.BackgroundImage = (Image)resources.GetObject("button12.BackgroundImage");
             button12.BackgroundImageLayout = ImageLayout.Stretch;
+            button12.Cursor = Cursors.Hand;
             button12.FlatAppearance.BorderSize = 0;
             button12.FlatStyle = FlatStyle.Flat;
             button12.Location = new Point(557, 114);
@@ -388,6 +394,7 @@
             // 
             button13.BackgroundImage = (Image)resources.GetObject("button13.BackgroundImage");
             button13.BackgroundImageLayout = ImageLayout.Stretch;
+            button13.Cursor = Cursors.Hand;
             button13.FlatAppearance.BorderSize = 0;
             button13.FlatStyle = FlatStyle.Flat;
             button13.Location = new Point(557, 151);
@@ -430,6 +437,7 @@
             // 
             // progressBar1
             // 
+            progressBar1.Cursor = Cursors.Hand;
             progressBar1.ForeColor = Color.FromArgb(0, 64, 0);
             progressBar1.Location = new Point(237, 48);
             progressBar1.Name = "progressBar1";
@@ -458,6 +466,7 @@
             button6.BackColor = Color.FromArgb(22, 22, 22);
             button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
             button6.BackgroundImageLayout = ImageLayout.Stretch;
+            button6.Cursor = Cursors.Hand;
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Location = new Point(4, 4);
@@ -470,6 +479,7 @@
             // 
             button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
             button7.BackgroundImageLayout = ImageLayout.Stretch;
+            button7.Cursor = Cursors.Hand;
             button7.FlatAppearance.BorderSize = 0;
             button7.FlatStyle = FlatStyle.Flat;
             button7.Location = new Point(48, 4);
@@ -477,11 +487,13 @@
             button7.Size = new Size(37, 20);
             button7.TabIndex = 1;
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
             button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
             button8.BackgroundImageLayout = ImageLayout.Stretch;
+            button8.Cursor = Cursors.Hand;
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Location = new Point(92, 4);
@@ -517,6 +529,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Cursor = Cursors.Hand;
             label2.Font = new Font("Impact", 36F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
             label2.Location = new Point(224, 154);
@@ -546,6 +559,7 @@
             pictureBox1.Size = new Size(186, 185);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel4
             // 
@@ -581,6 +595,7 @@
             button2.BackColor = Color.Black;
             button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
             button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Location = new Point(3, 54);
@@ -588,11 +603,13 @@
             button2.Size = new Size(166, 45);
             button2.TabIndex = 1;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
             button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.Cursor = Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Location = new Point(3, 105);
@@ -600,11 +617,13 @@
             button3.Size = new Size(166, 45);
             button3.TabIndex = 2;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
             button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
             button4.BackgroundImageLayout = ImageLayout.Stretch;
+            button4.Cursor = Cursors.Hand;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Location = new Point(3, 156);
@@ -617,6 +636,7 @@
             // 
             button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
             button5.BackgroundImageLayout = ImageLayout.Stretch;
+            button5.Cursor = Cursors.Hand;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Location = new Point(3, 207);
@@ -624,12 +644,14 @@
             button5.Size = new Size(166, 48);
             button5.TabIndex = 4;
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
             button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(3, 3);
@@ -637,6 +659,11 @@
             button1.Size = new Size(166, 45);
             button1.TabIndex = 0;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
             // 
             // F_Create_Playlist
             // 
@@ -647,6 +674,7 @@
             Name = "F_Create_Playlist";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "F_Create_Playlist";
+            Load += F_Create_Playlist_Load;
             panel1.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
@@ -691,9 +719,7 @@
         private Label label4;
         private TableLayoutPanel tableLayoutPanel2;
         private Label label3;
-        private Label label2;
         private Label label1;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
@@ -714,5 +740,8 @@
         private Label label8;
         private Label label7;
         private Label label6;
+        public PictureBox pictureBox1;
+        public Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }

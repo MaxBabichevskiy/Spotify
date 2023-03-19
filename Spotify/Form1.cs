@@ -5,7 +5,7 @@ namespace Spotify
 {
     public partial class Form1 : Form
     {
-        SoundPlayer player = null;
+        //SoundPlayer player = null;
 
         string fileName = string.Empty;
 
@@ -18,7 +18,7 @@ namespace Spotify
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            player = new SoundPlayer();
+            // player = new SoundPlayer();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -35,13 +35,13 @@ namespace Spotify
         {
             try
             {
-                player.SoundLocation = fileName;
-                player.Play();
+                //player.SoundLocation = fileName;
+                // player.Play();
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"{ex.Message}", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show($"{ex.Message}", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
 
@@ -51,14 +51,14 @@ namespace Spotify
 
         private void button6_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog()
-            {
-                Filter = "WAV|*.wav",
-                Multiselect = false,
-                ValidateNames = true
-            };
+            //OpenFileDialog ofd = new OpenFileDialog()
+            //{
+            //    Filter = "WAV|*.wav",
+            //    Multiselect = false,
+            //    ValidateNames = true
+            //};
 
-            if (ofd.ShowDialog() == DialogResult.OK) { fileName = ofd.FileName; }
+            //if (ofd.ShowDialog() == DialogResult.OK) { fileName = ofd.FileName; }
 
         }
 
@@ -71,24 +71,28 @@ namespace Spotify
         {
             F_Search f_Search = new F_Search();
             f_Search.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             F_Media f_Media = new F_Media();
             f_Media.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             F_Create_Playlist f_Create_Playlist = new F_Create_Playlist();
             f_Create_Playlist.Show();
+            this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             F_Favorite f_Favorite = new F_Favorite();
             f_Favorite.Show();
+            this.Hide();
         }
     }
 }
