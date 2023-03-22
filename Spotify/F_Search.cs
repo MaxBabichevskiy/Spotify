@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,14 +14,12 @@ namespace Spotify
 {
     public partial class F_Search : Form
     {
+        SoundPlayer player = null;
+        public string fileName = Data.fileName;
+
         public F_Search()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
@@ -57,6 +57,38 @@ namespace Spotify
         {
             Form1 form1 = new Form1();
             form1.Show();
+            this.Close();
+        }
+
+        private void F_Search_Load(object sender, EventArgs e)
+        {
+            player = new SoundPlayer();
+            label18.Text = Data.simpleString;
+            pictureBox27.Image = Data.album_pic;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            player.SoundLocation = fileName;
+            player.Play();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            player.Stop();
+        }
+
+        private void pictureBox27_Click(object sender, EventArgs e)
+        {
+            F_Create_Playlist f_Create_Playlist = new F_Create_Playlist();
+            f_Create_Playlist.Show();
+            this.Hide();
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            F_Create_Song f_Create_Song = new F_Create_Song();
+            f_Create_Song.Show();
             this.Close();
         }
     }

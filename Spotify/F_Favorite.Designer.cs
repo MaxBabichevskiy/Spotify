@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Favorite));
             panel1 = new Panel();
+            pictureBox7 = new PictureBox();
             panel3 = new Panel();
             label5 = new Label();
             label4 = new Label();
@@ -62,19 +63,22 @@
             button5 = new Button();
             button1 = new Button();
             panel5 = new Panel();
-            label14 = new Label();
-            label13 = new Label();
-            progressBar1 = new ProgressBar();
+            label18 = new Label();
             tableLayoutPanel4 = new TableLayoutPanel();
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
+            button14 = new Button();
+            label14 = new Label();
+            label13 = new Label();
+            progressBar1 = new ProgressBar();
             panel2 = new Panel();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -94,6 +98,7 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoSize = true;
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(pictureBox7);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(tableLayoutPanel1);
@@ -102,6 +107,15 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(949, 558);
             panel1.TabIndex = 5;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Location = new Point(31, 391);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(154, 154);
+            pictureBox7.TabIndex = 8;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // panel3
             // 
@@ -503,14 +517,100 @@
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(24, 24, 24);
+            panel5.Controls.Add(label18);
+            panel5.Controls.Add(tableLayoutPanel4);
             panel5.Controls.Add(label14);
             panel5.Controls.Add(label13);
             panel5.Controls.Add(progressBar1);
-            panel5.Controls.Add(tableLayoutPanel4);
             panel5.Location = new Point(220, 482);
             panel5.Name = "panel5";
             panel5.Size = new Size(726, 73);
             panel5.TabIndex = 4;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(3, 13);
+            label18.Name = "label18";
+            label18.Size = new Size(59, 16);
+            label18.TabIndex = 5;
+            label18.Text = "Плейлист";
+            label18.Click += label18_Click;
+            // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tableLayoutPanel4.ColumnCount = 4;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel4.Controls.Add(button6, 0, 0);
+            tableLayoutPanel4.Controls.Add(button7, 1, 0);
+            tableLayoutPanel4.Controls.Add(button8, 3, 0);
+            tableLayoutPanel4.Controls.Add(button14, 2, 0);
+            tableLayoutPanel4.Location = new Point(294, 3);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 1;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.Size = new Size(134, 32);
+            tableLayoutPanel4.TabIndex = 4;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(22, 22, 22);
+            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
+            button6.BackgroundImageLayout = ImageLayout.Stretch;
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Location = new Point(4, 4);
+            button6.Name = "button6";
+            button6.Size = new Size(26, 20);
+            button6.TabIndex = 0;
+            button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
+            button7.BackgroundImageLayout = ImageLayout.Stretch;
+            button7.Cursor = Cursors.Hand;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Location = new Point(37, 4);
+            button7.Name = "button7";
+            button7.Size = new Size(26, 20);
+            button7.TabIndex = 1;
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
+            // button8
+            // 
+            button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
+            button8.BackgroundImageLayout = ImageLayout.Stretch;
+            button8.Cursor = Cursors.Hand;
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Location = new Point(103, 4);
+            button8.Name = "button8";
+            button8.Size = new Size(27, 20);
+            button8.TabIndex = 2;
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            button14.BackgroundImage = (Image)resources.GetObject("button14.BackgroundImage");
+            button14.BackgroundImageLayout = ImageLayout.Stretch;
+            button14.FlatAppearance.BorderSize = 0;
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.Location = new Point(70, 4);
+            button14.Name = "button14";
+            button14.Size = new Size(26, 23);
+            button14.TabIndex = 3;
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // label14
             // 
@@ -540,63 +640,6 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(254, 3);
             progressBar1.TabIndex = 1;
-            // 
-            // tableLayoutPanel4
-            // 
-            tableLayoutPanel4.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            tableLayoutPanel4.ColumnCount = 3;
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel4.Controls.Add(button6, 0, 0);
-            tableLayoutPanel4.Controls.Add(button7, 1, 0);
-            tableLayoutPanel4.Controls.Add(button8, 2, 0);
-            tableLayoutPanel4.Location = new Point(298, 3);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            tableLayoutPanel4.RowCount = 1;
-            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.Size = new Size(133, 28);
-            tableLayoutPanel4.TabIndex = 0;
-            // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(22, 22, 22);
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.BackgroundImageLayout = ImageLayout.Stretch;
-            button6.Cursor = Cursors.Hand;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Location = new Point(4, 4);
-            button6.Name = "button6";
-            button6.Size = new Size(37, 20);
-            button6.TabIndex = 0;
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
-            button7.BackgroundImageLayout = ImageLayout.Stretch;
-            button7.Cursor = Cursors.Hand;
-            button7.FlatAppearance.BorderSize = 0;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.Location = new Point(48, 4);
-            button7.Name = "button7";
-            button7.Size = new Size(37, 20);
-            button7.TabIndex = 1;
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
-            button8.BackgroundImageLayout = ImageLayout.Stretch;
-            button8.Cursor = Cursors.Hand;
-            button8.FlatAppearance.BorderSize = 0;
-            button8.FlatStyle = FlatStyle.Flat;
-            button8.Location = new Point(92, 4);
-            button8.Name = "button8";
-            button8.Size = new Size(37, 20);
-            button8.TabIndex = 2;
-            button8.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -665,7 +708,9 @@
             Name = "F_Favorite";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "F_Favorite";
+            Load += F_Favorite_Load;
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
@@ -700,10 +745,6 @@
         private Label label14;
         private Label label13;
         private ProgressBar progressBar1;
-        private TableLayoutPanel tableLayoutPanel4;
-        private Button button6;
-        private Button button7;
-        private Button button8;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -732,5 +773,12 @@
         private Button button11;
         private Button button12;
         private Button button13;
+        private TableLayoutPanel tableLayoutPanel4;
+        private Button button6;
+        private Button button7;
+        private Button button8;
+        private Button button14;
+        private PictureBox pictureBox7;
+        private Label label18;
     }
 }

@@ -31,7 +31,9 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Create_Playlist));
             panel1 = new Panel();
+            pictureBox7 = new PictureBox();
             panel3 = new Panel();
+            lstPlayableMedia = new ListBox();
             label5 = new Label();
             label4 = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -56,6 +58,7 @@
             button12 = new Button();
             button13 = new Button();
             panel5 = new Panel();
+            label18 = new Label();
             label14 = new Label();
             label13 = new Label();
             progressBar1 = new ProgressBar();
@@ -63,6 +66,7 @@
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
+            button14 = new Button();
             panel2 = new Panel();
             label3 = new Label();
             label2 = new Label();
@@ -77,6 +81,7 @@
             button1 = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -96,6 +101,7 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoSize = true;
             panel1.BackColor = Color.Black;
+            panel1.Controls.Add(pictureBox7);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel2);
@@ -106,10 +112,20 @@
             panel1.Size = new Size(949, 558);
             panel1.TabIndex = 4;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Location = new Point(31, 391);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(154, 154);
+            pictureBox7.TabIndex = 7;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
             // panel3
             // 
             panel3.AutoScroll = true;
             panel3.BackColor = Color.FromArgb(18, 18, 18);
+            panel3.Controls.Add(lstPlayableMedia);
             panel3.Controls.Add(label5);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(tableLayoutPanel2);
@@ -117,6 +133,15 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(726, 214);
             panel3.TabIndex = 6;
+            // 
+            // lstPlayableMedia
+            // 
+            lstPlayableMedia.FormattingEnabled = true;
+            lstPlayableMedia.ItemHeight = 15;
+            lstPlayableMedia.Location = new Point(274, 36);
+            lstPlayableMedia.Name = "lstPlayableMedia";
+            lstPlayableMedia.Size = new Size(116, 19);
+            lstPlayableMedia.TabIndex = 6;
             // 
             // label5
             // 
@@ -406,6 +431,7 @@
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(24, 24, 24);
+            panel5.Controls.Add(label18);
             panel5.Controls.Add(label14);
             panel5.Controls.Add(label13);
             panel5.Controls.Add(progressBar1);
@@ -414,6 +440,18 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(726, 73);
             panel5.TabIndex = 4;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Impact", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(3, 13);
+            label18.Name = "label18";
+            label18.Size = new Size(59, 16);
+            label18.TabIndex = 4;
+            label18.Text = "Плейлист";
+            label18.Click += label18_Click;
             // 
             // label14
             // 
@@ -447,18 +485,20 @@
             // tableLayoutPanel4
             // 
             tableLayoutPanel4.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            tableLayoutPanel4.ColumnCount = 3;
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel4.ColumnCount = 4;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel4.Controls.Add(button6, 0, 0);
             tableLayoutPanel4.Controls.Add(button7, 1, 0);
-            tableLayoutPanel4.Controls.Add(button8, 2, 0);
-            tableLayoutPanel4.Location = new Point(298, 3);
+            tableLayoutPanel4.Controls.Add(button8, 3, 0);
+            tableLayoutPanel4.Controls.Add(button14, 2, 0);
+            tableLayoutPanel4.Location = new Point(294, 3);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel4.Size = new Size(133, 28);
+            tableLayoutPanel4.Size = new Size(134, 32);
             tableLayoutPanel4.TabIndex = 0;
             // 
             // button6
@@ -471,9 +511,10 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.Location = new Point(4, 4);
             button6.Name = "button6";
-            button6.Size = new Size(37, 20);
+            button6.Size = new Size(26, 20);
             button6.TabIndex = 0;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -482,9 +523,9 @@
             button7.Cursor = Cursors.Hand;
             button7.FlatAppearance.BorderSize = 0;
             button7.FlatStyle = FlatStyle.Flat;
-            button7.Location = new Point(48, 4);
+            button7.Location = new Point(37, 4);
             button7.Name = "button7";
-            button7.Size = new Size(37, 20);
+            button7.Size = new Size(26, 20);
             button7.TabIndex = 1;
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
@@ -496,11 +537,25 @@
             button8.Cursor = Cursors.Hand;
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatStyle = FlatStyle.Flat;
-            button8.Location = new Point(92, 4);
+            button8.Location = new Point(103, 4);
             button8.Name = "button8";
-            button8.Size = new Size(37, 20);
+            button8.Size = new Size(27, 20);
             button8.TabIndex = 2;
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // button14
+            // 
+            button14.BackgroundImage = (Image)resources.GetObject("button14.BackgroundImage");
+            button14.BackgroundImageLayout = ImageLayout.Stretch;
+            button14.FlatAppearance.BorderSize = 0;
+            button14.FlatStyle = FlatStyle.Flat;
+            button14.Location = new Point(70, 4);
+            button14.Name = "button14";
+            button14.Size = new Size(26, 23);
+            button14.TabIndex = 3;
+            button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // panel2
             // 
@@ -676,6 +731,7 @@
             Text = "F_Create_Playlist";
             Load += F_Create_Playlist_Load;
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
@@ -743,5 +799,9 @@
         public PictureBox pictureBox1;
         public Label label2;
         private System.Windows.Forms.Timer timer1;
+        private PictureBox pictureBox7;
+        private Label label18;
+        private Button button14;
+        private ListBox lstPlayableMedia;
     }
 }

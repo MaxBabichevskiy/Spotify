@@ -33,9 +33,12 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             textBox1 = new TextBox();
-            textBox2 = new TextBox();
             button1 = new Button();
+            panel1 = new Panel();
+            label2 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // label4
@@ -88,24 +91,8 @@
             textBox1.Size = new Size(206, 16);
             textBox1.TabIndex = 8;
             textBox1.Text = "Добавить название";
-            textBox1.TextChanged += textBox1_TextChanged;
             textBox1.Enter += textBox1_Enter;
             textBox1.Leave += textBox1_Leave;
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.FromArgb(62, 62, 62);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Cursor = Cursors.IBeam;
-            textBox2.ForeColor = Color.FromArgb(148, 148, 148);
-            textBox2.Location = new Point(182, 107);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(206, 101);
-            textBox2.TabIndex = 9;
-            textBox2.Text = "Добавить описание(необязательно)";
-            textBox2.Enter += textBox2_Enter;
-            textBox2.Leave += textBox2_Leave;
             // 
             // button1
             // 
@@ -121,14 +108,47 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(62, 62, 62);
+            panel1.Controls.Add(label2);
+            panel1.Location = new Point(182, 107);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(206, 101);
+            panel1.TabIndex = 11;
+            panel1.Click += panel1_Click;
+            panel1.Paint += panel1_Paint;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = Color.FromArgb(148, 148, 148);
+            label2.Location = new Point(30, 31);
+            label2.Name = "label2";
+            label2.Size = new Size(151, 30);
+            label2.TabIndex = 0;
+            label2.Text = "Нажмите или перетащите\r\n        сюда файл WAV";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(40, 40, 40);
+            label3.ForeColor = Color.FromArgb(148, 148, 148);
+            label3.Location = new Point(42, 165);
+            label3.Name = "label3";
+            label3.Size = new Size(106, 15);
+            label3.TabIndex = 12;
+            label3.Text = "Выбрать обложку";
+            // 
             // F_Create_Song
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(407, 287);
+            Controls.Add(label3);
+            Controls.Add(panel1);
             Controls.Add(button1);
-            Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
@@ -141,6 +161,8 @@
             MouseDown += F_Create_Song_MouseDown;
             MouseMove += F_Create_Song_MouseMove;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -151,7 +173,9 @@
         private Label label1;
         private PictureBox pictureBox1;
         private TextBox textBox1;
-        private TextBox textBox2;
         private Button button1;
+        private Panel panel1;
+        private Label label2;
+        private Label label3;
     }
 }

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Reflection.Emit;
+using System.IO;
+
 
 namespace Spotify
 {
@@ -16,14 +18,19 @@ namespace Spotify
     {
         SoundPlayer player = null;
 
-        public string fileName = string.Empty;
+        public string fileName = Data.fileName;
 
-       
+
 
 
         public F_Create_Playlist()
         {
             InitializeComponent();
+            if (lstPlayableMedia.Items.Count == 0)
+            {
+                button7.SendToBack();
+
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -63,12 +70,21 @@ namespace Spotify
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            F_Media f_Media = new F_Media();
+            f_Media.Show();
+            this.Close();
         }
 
         private void F_Create_Playlist_Load(object sender, EventArgs e)
         {
             player = new SoundPlayer();
+            label2.Text = Data.simpleString;
+
+            label18.Text = Data.simpleString;
+
+            pictureBox1.Image = Data.album_pic;
+
+            pictureBox7.Image = Data.album_pic;
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -78,7 +94,9 @@ namespace Spotify
                 player.SoundLocation = fileName;
                 player.Play();
 
-                timer1.Start();
+
+
+                // timer1.Start();
 
             }
             catch (Exception ex)
@@ -91,14 +109,97 @@ namespace Spotify
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            if (progressBar1.Value < 100)
-            {
-                progressBar1.Value += 1;
+            //if (progressBar1.Value < 100)
+            //{
+            //    progressBar1.Value += 1;
 
-                label13.Text = progressBar1.Value.ToString();
-            }
+            //    label13.Text = progressBar1.Value.ToString();
+            //}
 
 
+
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            player.Stop();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            F_Create_Song f_Create_Song = new F_Create_Song();
+            f_Create_Song.Show();
+            this.Close();
+        }
+
+
+
+
+        private List<string> files = new List<string>();
+        private List<string> paths = new List<string>();
+        private string currentAudio = string.Empty;
+
+
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            //using (OpenFileDialog ofd = new OpenFileDialog
+            //{
+            //    Title = "Please select an .mp3 to add...",
+            //    Filter = "MPEG3 Audio|*.mp3",
+            //    FilterIndex = 0,
+            //})
+            //{
+            //    if (ofd.ShowDialog() == DialogResult.OK)
+            //    {
+            //        string file = Path.GetFileName(ofd.FileName);
+            //        string path = Path.GetDirectoryName(ofd.FileName);
+
+            //        files.Add(file);
+            //        paths.Add(path);
+
+            //        files = files.Distinct().ToList();
+            //        if (lstPlayableMedia.Items.Count > 0)
+            //        {
+            //            lstPlayableMedia.Items.Add(file);
+            //            string[] strArray = new string[lstPlayableMedia.Items.Count];
+            //            for (int i = 0; i < lstPlayableMedia.Items.Count; i++)
+            //            {
+            //                string fileName = lstPlayableMedia.Items[i].ToString();
+            //                strArray[i] = fileName;
+            //            }
+            //            strArray = strArray.Distinct().ToArray();
+
+            //            lstPlayableMedia.Items.Clear();
+            //            lstPlayableMedia.Items.AddRange(strArray);
+            //        }
+            //        else
+            //        {
+
+            //            lstPlayableMedia.Items.Add(file);
+            //        }
+            //    }
+            //}
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            //if (lstPlayableMedia.SelectedIndex < 0 || lstPlayableMedia.SelectedIndex >= lstPlayableMedia.Items.Count)
+            //{
+            //    MessageBox.Show("Cannot play media because no audio file is selected.", "Audio File Not Selected",
+            //        MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //else
+            //{
+            //    player.Play();
+            //}
         }
     }
 }
