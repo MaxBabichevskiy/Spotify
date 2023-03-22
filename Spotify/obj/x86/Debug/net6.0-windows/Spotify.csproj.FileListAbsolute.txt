@@ -21,3 +21,7 @@ C:\Users\Максим\source\repos\Spotify\Spotify\obj\x86\Debug\net6.0-windows\
 C:\Users\Максим\source\repos\Spotify\Spotify\obj\x86\Debug\net6.0-windows\Spotify.F_Media.resources
 C:\Users\Максим\source\repos\Spotify\Spotify\obj\x86\Debug\net6.0-windows\Spotify.F_Search.resources
 C:\Users\Максим\source\repos\Spotify\Spotify\obj\x86\Debug\net6.0-windows\Spotify.F_Create_Song.resources
+C:\Users\Максим\source\repos\Spotify\Spotify\bin\x86\Debug\net6.0-windows\PlaylistsNET.dll
+C:\Users\Максим\source\repos\Spotify\Spotify\obj\x86\Debug\net6.0-windows\Spotify.csproj.CopyComplete
+C:\Users\Максим\source\repos\Spotify\Spotify\bin\x86\Debug\net6.0-windows\AxInterop.WMPLib.dll
+C:\Users\Максим\source\repos\Spotify\Spotify\bin\x86\Debug\net6.0-windows\Interop.WMPLib.dll
