@@ -110,6 +110,7 @@
             // 
             // panel1
             // 
+            panel1.AllowDrop = true;
             panel1.BackColor = Color.FromArgb(62, 62, 62);
             panel1.Controls.Add(label2);
             panel1.Location = new Point(182, 107);
@@ -117,6 +118,8 @@
             panel1.Size = new Size(206, 101);
             panel1.TabIndex = 11;
             panel1.Click += panel1_Click;
+            panel1.DragDrop += panel1_DragDrop;
+            panel1.DragEnter += panel1_DragEnter;
             panel1.Paint += panel1_Paint;
             // 
             // label2
